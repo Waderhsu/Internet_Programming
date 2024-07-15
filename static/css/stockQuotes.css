@@ -1,0 +1,17 @@
+body {
+    background-color: gray;
+}
+
+#stock {
+    text-align: center;
+    margin-top: 5%;
+}
+
+h1 {
+    font-size: large;
+}
+
+#APIresponse {
+    height: 200px;
+    width: 500px;
+}

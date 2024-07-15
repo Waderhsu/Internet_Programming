@@ -1,0 +1,52 @@
+body {
+    background-color: gray;
+}
+form {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 10px;
+}
+table, th, td {
+    padding: 10px;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#map {
+    height: 500px;
+    width: 500px;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* margin-top: 10%; */
+}
+#floating-panel {
+    position: relative;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #fff;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+#mapAndFormContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#mapContainer {
+    display:inline-block
+}
+
+#formContainer {
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,72 @@
+<html>
+
+<head>
+  <title>MyServer</title>
+  <style>
+    div {
+      text-align: center;
+      margin-bottom: 5%;
+    }
+
+    #links ul li {
+      display: inline;
+      margin-right: 30px;
+    }
+
+    label {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <center>
+    <h1>MyServer Page</h1></br>
+  </center>
+  <div id='links'>
+    <ul>
+      <li> <a href="Coffman.html"> Coffman Picture</a> </li>
+      <li> <a href="Coffman_N_OuttaSpace.html"> Coffman + OuttaSpace</a> </li>
+      <li> <a href="OuttaSpace.html"> OuttaSpace MP3</a> </li>
+      <li> <a href="../../explorer">File explorer</a> </li>
+    </ul>
+  </div>
+  <hr>
+  <div>
+    <form action="/redirect" method="GET">
+      <label for="query">Search Term:</label>
+      <input type="query" id="query" name="query" required><br><br>
+      <label for="source">Search Source</label>
+      <select id="source" name="source">
+        <option value="youtube">YouTube</option>
+        <option value="google">Google</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+    <br><br><br>
+    <form action="/calculator" method="GET">
+      <label for="num1">Number 1:</label>
+      <input type="number" id="num1" name="num1" required>
+      <label for="operator">Operator:</label>
+      <select id="operator" name="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+      <label for="num2">Number 2:</label>
+      <input type="number" id="num2" name="num2" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+  <div>
+    <a href="MySchedule.html"> Go to MySchedule page</a>
+    <a href="MyForm.html"> Go to MyForm page</a>
+    <a href="AboutMe.html"> Go to AboutMe Page</a>
+    <!-- <a href="EventLog.html"> Go to FormSubmissions Page</a> -->
+    <a href="stockQuotes.html"> Go to MyStock Page</a>
+    <a href="private.html"> Go to private Page</a>
+  </div>
+</body>
+
+</html>

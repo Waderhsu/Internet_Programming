@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Stock</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/stockQuotes.css">
+    <script src="../js/stocks.js"></script>
+    
+</head>
+
+<body>
+    <div id="bar">
+        <a href="MySchedule.html">My Schedule</a>
+        <a href="MyForm.html">Form Input</a>
+        <a href="AboutMe.html">About Me</a>
+        <a href="EventLog.html">Form Submissions</a>
+        <a href="stockQuotes.html">My Stock</a>
+    </div>
+    <div id="stock">
+        <h1>Enter Stock Symbol</h1>
+        <input type="text" id="stockSymboled" name="stockSymboled" placeholder="e.g. AAPL, MSFT">
+        <!-- <button onclick="getResponse()">Get Stock Data</button> -->
+        <button id="stockBtn">Get Stock Data</button>
+        <p id="demo"></p>
+        <script src="../js/stockQuotes.js"></script>
+        <h1>API response</h1>
+        <textarea id="APIresponse" name="APIresponse" rows="4" cols="50"></textarea>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form Input</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+
+<body>
+    <div id="bar">
+        <a href="MySchedule.html">My Schedule</a>
+        <a href="MyForm.html">Form Input</a>
+        <a href="AboutMe.html">About Me</a>
+        <a href="EventLog.html">Form Submissions</a>
+        <a href="stockQuotes.html">My Stock</a>
+    </div>
+    <div id="mapAndFormContainer">
+        <div id="formContainer">
+            <form action="/EventLog.html" method="post" target="_blank">
+                <table>
+                    <tr>
+                        <td>Event</td>
+                        <td><input type="text" id="event" name="event" pattern="\d*\w*\s*" required></td>
+                    </tr>
+                    <tr>
+                        <td>Day of the Week</td>
+                        <td>
+                            <select name="day">
+                                <option value="sun">Sun</option>
+                                <option value="mon">Mon</option>
+                                <option value="tue">Tue</option>
+                                <option value="wed">Wed</option>
+                                <option value="thu">Thu</option>
+                                <option value="fri">Fri</option>
+                                <option value="sat">Sat</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Start</td>
+                        <td><input type="time" id="start" name="start" required></td>
+                    </tr>
+                    <tr>
+                        <td>End</td>
+                        <td><input type="time" id="end" name="end" required></td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td><input type="tel" id="phone" name="phone" pattern="^[1-9][0-9]{2}-[0-9]{3}-[0-9]{4}"
+                                placeholder="xxx-xxx-xxxx" required></td>
+                    </tr>
+                    <tr>
+                        <td>Location</td>
+                        <td><input type="text" id="location" name="location" required></td>
+                    </tr>
+                    <tr>
+                        <td>Extra Info</td>
+                        <td><input type="text" id="extra" name="extra" required></td>
+                    </tr>
+                    <tr>
+                        <td>Enter URL for the Extra Info</td>
+                        <td><input type="url" id="infoURL" name="url" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="reset" value="Clear"></td>
+                        <td><input type="submit" value="Submit"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div id="mapContainer">
+            <div id="map"></div>
+        </div>
+    </div>
+    <script src="../js/formPOI.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzT6-ldxhAWi5ZIKm20YtkVGobVCfbvmE&libraries=places&callback=initMap"
+        async defer></script> 
+</body>
+
+</html>

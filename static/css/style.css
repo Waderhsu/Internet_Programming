@@ -1,0 +1,16 @@
+#bar {
+    background-color: blue;
+    text-align: center;
+}
+
+div>a {
+    color: aliceblue;
+    margin: 50px;
+    font-size:x-large;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 4px;
+}

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Weekly Schedule</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/schedule.css">
+</head>
+
+<body>
+    <div id="bar">
+        <a href="MySchedule.html">My Schedule</a>
+        <a href="MyForm.html">Form Input</a>
+        <a href="AboutMe.html">About Me</a>
+        <a href="EventLog.html">Form Submissions</a>
+        <a href="stockQuotes.html">My Stock</a>
+    </div>
+    <h1>
+        My Weekly Schedule
+    </h1>
+    <div id="table">
+        <script>
+            function chgimg(name, txt, id) {
+                // Debug output statements - rudimentary stuff
+                //alert("name: " + name);
+                //alert("alternate text: " + txt);
+                var largeimage = document.getElementById("largeImage");
+                largeimage.src = name;
+                largeimage.alt = txt;
+                var smallimage = document.getElementById(id);
+                smallimage.innerHTML = '<img id="image1" src="' + name + '" alt="' + txt + '" width="100" height="100">';
+                var a = "5" + 5;
+            }
+            function chgsmallimg(name, txt, id) {
+                var smallimage = document.getElementById(id);
+                smallimage.innerHTML = ' ';
+            }
+        </script>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Event</th>
+                <th>Time</th>
+                <th>Event Location (Virtual or Physical)</th>
+                <th>Address</th>
+                <th>Phone Number</th>
+                <th>Extra Info(URL)</th>
+            </tr>
+            <tr onmouseover="chgimg('../img/anderson.jpg', 'Anderson Hall', 'image1')"
+                onmouseout="chgsmallimg('','','image1')">
+                <td class="day">Monday</td>
+                <td class="name">CSCI 4131 Lecture</td>
+                <td class="time">11:15AM - 12:30PM</td>
+                <td>
+                    <div class="location">Anderson Hall 370</div>
+                    <div id="image1"></div>
+                </td>
+                <td class="address">257 S 19th Ave, Minneapolis, MN 55455</td>
+                <td>No Phone Number</td>
+                <td><a href="https://umtc.catalog.prod.coursedog.com/courses/7906541">CSCI 4131 Info</a></td>
+            </tr>
+            <tr onmouseover="chgimg('../img/healthscienceseducationcenter.jpg', 'Health Sciences Education Cent2-110', 'image2')"
+                onmouseout="chgsmallimg('','','image2')">
+                <td class="day">Monday</td>
+                <td class="name">MOT 4001 Lecture</td>
+                <td class="time">3:35PM - 5:30PM</td>
+                <td>
+                    <div class="location">Health Sciences Education Cent2-110</div>
+                    <div id="image2"></div>
+                </td>
+                <td class="address">526 Delaware St SE, Minneapolis, MN 55455</td>
+                <td>No Phone Number</td>
+                <td><a href="https://umtc.catalog.prod.coursedog.com/courses/8006881">MOT 4001 Info</a></td>
+            </tr>
+            <tr onmouseover="chgimg('../img/McNeal.jpg', 'McNeal Hall 126', 'image3')"
+                onmouseout="chgsmallimg('','','image3')">
+                <td class="day">Tuesday</td>
+                <td class="name">FSCN 1011 Laboratory</td>
+                <td class="time">9:35AM - 11:30AM</td>
+                <td>
+                    <div class="location">McNeal Hall 126</div>
+                    <div id="image3"></div>
+                </td>
+                <td class="address">1985 Buford Ave, Saint Paul, MN 55108</td>
+                <td>No Phone Number</td>
+                <td><a href="https://umtc.catalog.prod.coursedog.com/courses/0075401">FSCN 1011 Info</a></td>
+            </tr>
+            <tr onmouseover="chgimg('../img/FoodScience.jpg', 'Food Sciences/Nutrition', 'image4')"
+                onmouseout="chgsmallimg('','','image4')">
+                <td class="day">Tuesday</td>
+                <td class="name">FSCN 1011 Laboratory</td>
+                <td class="time">11:45AM - 1:00PM</td>
+                <td>
+                    <div class="location">Food Sciences/Nutrition 15</div>
+                    <div id="image4"></div>
+                </td>
+                <td class="address">1334 Eckles Ave Ste 225, Saint Paul, MN 55108</td>
+                <td>No Phone Number</td>
+                <td><a href="https://umtc.catalog.prod.coursedog.com/courses/0075401">FSCN 1011 Info</a></td>
+            </tr>
+            <tr onmouseover="chgimg('../img/Ruttan.jpg', 'Ruttan Hall B35', 'image5')"
+                onmouseout="chgsmallimg('','','image5')">
+                <td class="day">Tuesday</td>
+                <td class="name">APEC 1101 Lecture</td>
+                <td class="time">1:30PM - 2:45PM</td>
+                <td>
+                    <div class="location">Ruttan Hall B35</div>
+                    <div id="image5"></div>
+                </td>
+                <td class="address">1994 Buford Ave, Saint Paul, MN 55108</td>
+                <td>No Phone Number</td>
+                <td><a href="https://umtc.catalog.prod.coursedog.com/courses/0062811">APEC 1101 Info</a></td>
+            </tr>
+            <tr onmouseover="chgimg('../img/Hyland.jpg', 'Hyland Hills Ski Area', 'image6')"
+                onmouseout="chgsmallimg('','','image6')">
+                <td class="day">Tuesday</td>
+                <td class="name">PE 1057 Laboratory</td>
+                <td class="time">5:00PM - 9:00PM</td>
+                <td>
+                    <div class="location">Hyland Hills Ski Area</div>
+                    <div id="image6"></div>
+                </td>
+                <td class="address">8800 Chalet Road, Bloomington, MN 55438</td>
+                <td>(763) 694-7800</td>
+                <td><a href="https://umtc.catalog.prod.coursedog.com/courses/0045611">PE 1057 Info</a></td>
+            </tr>
+            <tr onmouseover="chgimg('../img/anderson.jpg', 'Anderson Hall 370', 'image7')"
+                onmouseout="chgsmallimg('','','image7')">
+                <td class="day">Wednesday</td>
+                <td class="name">CSCI 4131 Lecture</td>
+                <td class="time">11:15AM - 12:30PM</td>
+                <td>
+                    <div class="location">Anderson Hall 370</div>
+                    <div id="image7"></div>
+                </td>
+                <td class="address">257 S 19th Ave, Minneapolis, MN 55455</td>
+                <td>No Phone Number</td>
+                <td><a href="https://umtc.catalog.prod.coursedog.com/courses/7906541">CSCI 4131 Info</a></td>
+            </tr>
+            <tr onmouseover="chgimg('../img/FoodScience.jpg', 'Food Sciences/Nutrition', 'image8')"
+                onmouseout="chgsmallimg('','','image8')">
+                <td class="day">Thursday</td>
+                <td class="name">FSCN 1011 Laboratory</td>
+                <td class="time">11:45AM - 1:00PM</td>
+                <td>
+                    <div class="location">Food Sciences/Nutrition 15</div>
+                    <div id="image8"></div>
+                </td>
+                <td class="address">1334 Eckles Ave Ste 225, Saint Paul, MN 55108</td>
+                <td>No Phone Number</td>
+                <td><a href="https://umtc.catalog.prod.coursedog.com/courses/0075401">FSCN 1011 Info</a></td>
+            </tr>
+            <tr onmouseover="chgimg('../img/Ruttan.jpg', 'Ruttan Hall B35', 'image9')"
+                onmouseout="chgsmallimg('','','image9')">
+                <td class="day">Thursday</td>
+                <td class="name">APEC 1101 Lecture</td>
+                <td class="time">1:30PM - 2:45PM</td>
+                <td>
+                    <div class="location">Ruttan Hall B35</div>
+                    <div id="image9"></div>
+                </td>
+                <td class="address">1994 Buford Ave, Saint Paul, MN 55108</td>
+                <td>No Phone Number</td>
+                <td><a href="https://umtc.catalog.prod.coursedog.com/courses/0062811">APEC 1101 Info</a></td>
+            </tr>
+            <tr onmouseover="chgimg('../img/Ruttan.jpg', 'Ruttan Hall', 'image10')"
+                onmouseout="chgsmallimg('','','image10')">
+                <td class="day">Friday</td>
+                <td class="name">APEC 1101 Discussion</td>
+                <td class="time">10:45AM- 11:30PM</td>
+                <td>
+                    <div class="location">Ruttan Hall 143</div>
+                    <div id="image10"></div>
+                </td>
+                <td class="address">1994 Buford Ave, Saint Paul, MN 55108</td>
+                <td>No Phone Number</td>
+                <td><a href="https://umtc.catalog.prod.coursedog.com/courses/0062811">APEC 1101 Info</a></td>
+            </tr>
+            <tr onmouseover="chgimg('../img/TraderJoe.jpg', 'Trader Joe', 'image11')"
+                onmouseout="chgsmallimg('','','image11')">
+                <td class="day">Saturday</td>
+                <td class="name">Shopping</td>
+                <td class="time">3:00PM-4:30PM</td>
+                <td>
+                    <div class="location">Trader Joe's</div>
+                    <div id="image11"></div>
+                </td>
+                <td class="address">721 Washington Ave S Ste 101, Minneapolis, MN 55415</td>
+                <td>(612)339-2110</td>
+                <td><a href="https://www.traderjoes.com/home">Shopping Location Info</a></td>
+            </tr>
+            <tr onmouseover="chgimg('../img/radius.jpg', 'Radius', 'image12')"
+                onmouseout="chgsmallimg('','','image12')">
+                <td class="day">Sunday</td>
+                <td class="name">Dinner with roommate</td>
+                <td class="time">6:00PM - 7:00PM</td>
+                <td>
+                    <div class="location">Radius 113</div>
+                    <div id="image12"></div>
+                </td>
+                <td class="address">701 15th Ave SE Minneapolis , MN 55414</td>
+                <td>(952)228-1492</td>
+                <td><a href="https://housing.umn.edu/radius">Radius Info</a></td>
+            </tr>
+        </table>
+        <img id="largeImage" src="../img/gophers-mascot.png" alt="largeImage" width="250" height="250">
+    </div>
+    <div id="searchArea">
+        <div id="mapContainer">
+            <div id="sidebar"></div>
+            <div id="map"></div>
+        </div>
+        <div id="searchTable">
+            <table>
+                <tr>
+                    <td id="landmark">
+                        <img src="../img/landmark.png" alt="landmark" width="100">
+                    </td>
+                    <td>
+                        <h1 class="searchAreaH1">Find</h1>
+                        <select name="searchPlace" id="searchPlace" onchange="other()">
+                            <option value="restaurant">restaurants</option>
+                            <option value="hospital">hospitals</option>
+                            <option value="parking">parking</option>
+                            <option value="supermarket">supermarkets</option>
+                            <option value="other">other</option>
+                        </select><br>
+                        <script>
+                            function other(){
+                                var option = document.getElementById('searchPlace').value;
+                                if(option =='other') {
+                                    document.getElementById('otherPlace').disabled = false;
+                                }else{
+                                    document.getElementById('otherPlace').disabled = true;
+                                }
+                            }
+                        </script>
+                        <input type="text" id="otherPlace" name="otherPlace" placeholder="Enter other place" disabled><br>
+                        In<input type="text" id="radius" name="radius" size="9">meters<br>
+                        <button id="search" onclick="searchNearby()">Search</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../img/route.jpg" alt="route" width="100">
+                    </td>
+                    <td>
+                        <h1 class="searchAreaH1">Directions to</h1>
+                        <input type="text" id="Directionsplace" name="Directionsplace" placeholder="Coffman Union" size="15"><br>
+                        <h1 class="searchAreaH1">by</h1><br>
+                        <input type="radio" id="walk" name="travelMode" value="WALKING" checked="checked">
+                        <label for="walk">WALK</label><br>
+                        <input type="radio" id="drive" name="travelMode" value="DRIVING">
+                        <label for="drive">DRIVE</label><br>
+                        <input type="radio" id="trans" name="travelMode" value="TRANSIT">
+                        <label for="trans">TRANS</label><br>
+                        <button id="go" onclick="searchRoute()">Go</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="../js/map.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzT6-ldxhAWi5ZIKm20YtkVGobVCfbvmE&libraries=places&callback=initMap"
+        async defer></script>
+</body>
+
+</html>
